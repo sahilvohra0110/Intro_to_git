@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Account Signup</title>
+  </head>
+  <body>
+    <img src="download.png" alt="logo">
+    <form action="formdata.php">
+      <div>
+        <label for="Account Name">Account Name</label>
+        <input type="text" Name="username" id="Account Name">
+    </div>
+    <br>
+    <div>
+    <label for="Email">Email</label>
+      <input type="email" Name="email" id="Email"> 
+    </div>
+    <br>
+    <div>
+    <label for="Gender">Gender:</label>
+    Male<input type="radio" name="mygender" id="Gender"> Female<input type="radio" name="mygender" id="Gender">
+    Other<input type="radio" name="mygender" id="Gender">
+</div>
+<br>
+<div>
+<label for="DOB">DOB</label>
+<input type="date" name="mydob" id="DOB">
+</div>    
+<br>
+<div>
+    <label for="Mob no">Your mob no</label>
+    <input type="number" name="mobid" id="Mob no">
+</div>
+<br>
+<div>
+    <label for="Address">Address</label>
+    <input type="text" name="address" id="address">
+</div>
+<br>
+<div>
+    <label for="Account type">Account type</label>
+    <select name="Account type" id="account type">
+        <option value="Customer">Customer</option>
+        <option value="Vendor">Vendor</option>
+        <option value="Client">Cliet</option>
+        <option value="Retailer">Retailer</option>
+    </select>
+</div>
+<br>
+
+</form>
+  </body>
+</html>

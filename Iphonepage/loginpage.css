@@ -1,0 +1,10 @@
+*{box-sizing: border-box;}
+header{position: relative;padding:10px ; height:15%; background-color:blueviolet;}
+.mainbutton{position: absolute;top: 40px; right: 50px;}
+.mainbutton>button{height: 40px; width: 50px; border-radius: 20px; border-color: brown;}
+main{position: relative; height: 80%;}
+main>.image{height: 100%; width: 50%; background-color: azure;}
+main>.image>img{height:100% ; width: 50%;}
+main>.about{height: 100%;width: 50%;right: 0;top: 0;text-align: center;position:absolute; background-color: cornflowerblue;}
+main>.about>.image{height: 50%;margin: 5px; width: 90%;}
+main>.about>.image>.img{height: 100%;width: 90%;}

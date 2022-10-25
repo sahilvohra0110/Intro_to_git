@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        body{background-color: rgb(1, 61, 61);
+            font-family: Arial, Helvetica, sans-serif;
+            padding: 30px;
+        }
+        #payment{background-color:rgb(112, 62, 27);
+            
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        padding: 10px;
+        border-radius: 10px;
+    }
+    #payment fieldset{background-color: khaki; border: none;margin: 20px;
+    }
+    #payment legend{background-color: rgb(129, 230, 201); text-shadow: rgb(5, 10, 8)    5 px;}
+
+    #vis:hover{background-color: chartreuse;}
+    </style>
+    <title>Shipping form</title>
+</head>
+<body>
+    <form id="payment">
+    <fieldset>
+         <legend>Step 01: Personal details</legend>
+            <label for="n" >Name</label>
+            <input type="text" name="n"><br>
+            <label for="email" >email</label>
+            <input type="text" name="email"><br>
+            <label for="ph" >Contact</label>
+            <input type="number" name="ph"><br>
+    </fieldset>
+    <fieldset>
+        <legend>Step 02: Delivery Address</legend>
+        <label for="address">Address</label>
+        <textarea name="address" ></textarea><br>
+        <label for="pincode">Pincode</label>
+        <input type="number" name="pincode"><br>    
+        <label for="country">Country</label>
+
+        <datalist id="co" name="country"></datalist>
+        <select name="country" id="co">
+            <option value="" disabled selected hidden>Please enter</option>
+            <option value="USA"> United states</option>
+            <option value="India"> India</option>
+            <option value="UK"> UK</option>
+            <option value="Indonesia"> Indonesia</option>
+        </select>
+        
+
+
+    </fieldset>
+<fieldset>
+    <legend> Step 03: Card details</legend>
+    <label for="cardtype">Card type</label>
+    <input type="radio" name="cardtype" id="vis"> Visa
+    <input type="radio" name="cardtype" id="amex">Amex
+    <input type="radio" name="cardtype" id="mastercard">Mastercard <br>
+    <label for="cardnum">Cardnumber</label>
+    <input type="number" name="cardnum"><br>
+    <label for="seccode">Security code</label>
+    <input type="number" name="seccode"><br>
+    <label for="cardname">Card name</label>
+    <input type="text" name="cardname"><br>
+    <label for="filestore"> Please upload the file</label>
+    <input type="file" id="filestore" name="filestore" accept=".txt,.pdf,image/png">
+</fieldset>
+<button type="enter" >Enter </button>
+    </form>
+</body>
+</html>
